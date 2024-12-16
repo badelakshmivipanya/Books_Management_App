@@ -1,0 +1,17 @@
+.search-results-page {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .search-results-page h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .books-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  

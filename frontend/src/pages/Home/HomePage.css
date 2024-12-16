@@ -1,0 +1,91 @@
+/* Ensure the home page fills the full viewport */
+.home-page {
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f4f4f4;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Navbar stays centered and spans the full width */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Increased spacing for better width utilization */
+  background-color: #333;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px; /* Slightly larger font for better visibility */
+  padding: 10px 20px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Center and stretch the search section */
+.search-section {
+  margin: auto 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-section h1 {
+  margin-bottom: 30px;
+  font-size: 3rem; /* Increased size for prominence */
+  color: #333;
+}
+
+.filters {
+  display: flex;
+  gap: 15px; /* More spacing between input and button */
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%; /* Reduce margin by using 80% of the available width */
+  max-width: 800px; /* Prevent overly wide layout */
+  margin: 0 auto; /* Center the filters */
+}
+
+.filters input {
+  padding: 15px;
+  flex: 1; /* Input takes proportional space */
+  min-width: 300px; /* Minimum width for smaller screens */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.filters button {
+  padding: 15px 30px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filters button:hover {
+  background-color: #0056b3;
+}
+
+/* Ensure the body doesn't add extra margins */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
