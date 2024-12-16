@@ -10,11 +10,22 @@ const bookSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    publishYear: {
+    genre: {
+      type: String,
+      required: [true, 'Genre is required'], 
+      trim: true,
+    },
+    pages: {
       type: Number,
-      required: true,
+      required: [true, 'Number of pages is required'],
+      min: [1, 'A book must have at least one page'], 
+    },
+    publishedDate: {
+      type: Date,
+      required: [true, 'Published Date is required'],
     },
   },
+  
   {
     timestamps: true,
   }
